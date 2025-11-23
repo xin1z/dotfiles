@@ -20,6 +20,8 @@ set tabstop=4                 " Number of spaces per tab
 set shiftwidth=4              " Number of spaces for auto-indent
 set softtabstop=4             " Number of spaces for editing
 syntax enable                 " Enable syntax highlighting
+" Set tab, auto-indent etc. for C/C++
+autocmd FileType c,cpp,h setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 "Shortcuts to boost OI programming, commented cuz temporarily don't need it
 " nnoremap <F5> :w<CR>:!g++ -g % -o %:r && lldb %:r<CR>
