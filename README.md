@@ -13,41 +13,27 @@ More configs will be added to this repo in future.
 
 ### For Each
 
-Here shows their functions and the way to have them worked in your GNU/Linux machine(s):
+Here shows their functions and the way to have them worked in your machine.
 
 #### .zshrc
 
-This `.zshrc` file supports various features:
+This `.zshrc` file enables:
 
-- **Git Info**: Displays username, current working directory, and Git branch/status in the prompt.
+- **Git Info Displays**. It displays:
+    - Username, current working directory, and Git branch/status in the prompt.
 
-- **Plugin Support**:
-    - It manage the following plugins manually, which means if you want to add more plugins, you should modify the `.zshrc` file yourself.
-        - zsh-autosuggestions: Suggests commands as you type.
-        - zsh-syntax-highlighting: Highlights commands syntax for better visibility.
+- **Manual Plugin Control**. The following extensions are installed:
+    - zsh-autosuggestions
+    - zsh-syntax-highlighting
 
-- **Command Completion**: 
-    - Smart completion with case-insensitive matching.
-    - Supports `_` and `-` as interchangeable.
+- **Command Completion**. It supports basic smart completion with case-insensitive matching.
 
-- **Command Correction**
-  - Automatically suggests corrections for mistyped commands.
-  - Strict mode enabled for all commands.
+- **Command Correction**. It supports basic automatic suggestion for mistyped commands.
 
-- **History & Navigation**
-  - Shared history across multiple terminals.
-  - Incremental search using `Ctrl+R`.
-  - Auto `cd` into directories by typing the name.
-
-- **Development Environment**
-  - Optional CUDA environment variables.
-  - Ruby setup with `GEM_HOME`.
-  - Conda environment auto-initialization.
-
-- **Proxy Configuration**
-  - V2ray proxy setup for all applications (`ALL_PROXY=127.0.0.1:10808`).
-
-If you don't need some of those features, edit `.zshrc` and add `#` in front of the designated line(s).
+- **Various System Variables**. It has set variables for:
+    - CUDA
+    - Ruby's `GEM_HOME`
+    - Miniforge (use `conda-init` to enable in shell)
 
 To use this, You need to have `zsh` installed at first. Use the commands below to install it based on your distro(s).
 
