@@ -2,17 +2,16 @@
 
 ### TL,DR
 
-This repo is used to store most of my configs related to GNU/Linux, which I frequently use.
+This repo is used to store all my dotfiles for open source softwares e.g. Bash, Zsh, Neovim etc.
 
 It includes the following config files for now:
 
 1. Zsh: `.zshrc`
-2. Bash: `.vimrc`
-3. fbterm: `.fbtermrc`
+2. Neovim: `nvim/`
 
 More configs will be added to this repo in future.
 
-### For Each of Them
+### For Each
 
 Here shows their functions and the way to have them worked in your GNU/Linux machine(s):
 
