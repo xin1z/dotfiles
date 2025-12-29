@@ -13,7 +13,7 @@ More configs will be added to this repo in future.
 
 ### For Each
 
-Here shows their functions and the way to have them worked in your machine.
+Here shows their functions and the way to have them worked on your machine.
 
 #### .zshrc
 
@@ -35,7 +35,7 @@ This `.zshrc` file enables:
     - Ruby's `GEM_HOME`
     - Miniforge (use `conda-init` to enable in shell)
 
-To use this, You need to have `zsh` installed at first. Use the commands below to install it based on your distro(s).
+To use this, make sure you've installed `zsh` on your system.
 
 Arch Linux:
 
@@ -64,8 +64,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh-plugins/zs
 And, you need to clone this repo and link the `.zshrc` inside with `~/.zshrc`:
 
 ```bash
-git clone https://github.com/xin1z/personal-config.git ~/personal-config
-ln -s ~/personal-config/configs/.zshrc ~/.zshrc
+git clone https://github.com/xin1z/dotfiles.git ~/dotfiles
+ln -s ~/dotfiles/dotfiles/.zshrc ~/.zshrc
 ```
 
 Then, reload Zsh with:
