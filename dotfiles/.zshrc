@@ -69,6 +69,7 @@ export PATH="$GEM_HOME/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
+function conda-init {
 __conda_setup="$('/opt/miniforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -80,7 +81,8 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
-
 # Prevent using clear in miniforge when not activating any environment
 export PATH=/usr/bin:/bin:$PATH
+}
+# <<< conda initialize <<<
+
