@@ -100,7 +100,7 @@ The following packages are installed and configured:
 
 ***Features***: This config enables automatic Conda environment ditection, Python codes will automatically use the Python in the current Conda environment (if activated).
 
-It supports syntax highlights and basic code completion. It's pretty usable for now, and more features will be added.
+It supports syntax highlighting and basic code completion. It's pretty usable for now, and more features will be added.
 
 To use this, make sure you've installed `neovim` on your system.
 
