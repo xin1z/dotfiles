@@ -75,3 +75,29 @@ source ~/.zshrc
 ```
 
 Then, everything should work just fine.
+
+#### .config/nvim/
+
+This Neovim config uses 'Packer.nvim' to manage plugins.
+
+The following packages are installed and configured:
+
+- **Packer.nvim Itself**. Plugin manager.
+
+- **nvim-lspconfig**. LSP Server plugin.
+
+- **none-ls.nvim**. A formatter.
+
+- **Treesitter**. A Syntax-Highlighting extension.
+
+- **nvim-tree**. A file-tree extension.
+
+- **Catppuccin**. A Theme.
+
+- **hrsh7th/nvim-cmp etc.**. A bunch of packages for code completion.
+
+- **LuaSnip**. Snippet.
+
+***Features***: This config enables automatic Conda environment ditection, Python codes will automatically use the Python in the current Conda environment (if activated).
+
+It supports syntax highlights and basic code completion. It's pretty usable for now, and more features will be added.
