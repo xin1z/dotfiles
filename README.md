@@ -101,3 +101,35 @@ The following packages are installed and configured:
 ***Features***: This config enables automatic Conda environment ditection, Python codes will automatically use the Python in the current Conda environment (if activated).
 
 It supports syntax highlights and basic code completion. It's pretty usable for now, and more features will be added.
+
+To use this, make sure you've installed `neovim` on your system.
+
+Arch Linux:
+
+```bash
+sudo pacman -Syu
+sudo pacman -S neovim
+```
+
+Debian / Ubuntu:
+
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install neovim
+```
+
+Since the plugins are managed by `packer.nvim`, you need to clone it with `git`:
+
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+Then, this repository should be cloned and the `nvim/` folder should be linked:
+
+```bash
+git clone https://github.com/xin1z/dotfiles.git ~/dotfiles
+ln -sf ~/dotfiles/dotfiles/nvim/ ~/.config/nvim/
+```
+
+Then, start Neovim with `nvim` in terminal, run `:PackerSync` in command mode, and everything should work just fine.
