@@ -78,7 +78,11 @@ Then, everything should work just fine.
 
 #### .config/nvim/
 
-This Neovim config uses 'Packer.nvim' to manage plugins.
+This Neovim config uses `packer.nvim` to manage plugins.
+
+**WHY PACKER.NVIM?**
+
+Because it's more predictable, sustainable, maintainable than `lazy.nvim` and `packer.nvim`'s so-called 'successor'—`pckr.nvim`. I hate such 'smart' lazy loading features because it adds unnecessary complexity. `packer.nvim` gives its users full control to how plugins are loaded, and such predictability is what I like the most.
 
 The following packages are installed and configured:
 
