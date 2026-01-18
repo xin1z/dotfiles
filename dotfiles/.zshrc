@@ -61,7 +61,10 @@ PROMPT='%F{green}%n%f|%F{cyan}%~%f${vcs_info_msg_0_} $ '
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 # Set Proxy for V2ray
-export ALL_PROXY=127.0.0.1:10808
+# export ALL_PROXY=127.0.0.1:10808
+
+# Set Proxy for Clash
+export ALL_PROXY=127.0.0.1:7890
 
 # Ruby-related Environment Variables
 export GEM_HOME="$HOME/.gem/ruby/3.4.0"
