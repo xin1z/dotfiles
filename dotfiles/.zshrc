@@ -50,8 +50,9 @@ zstyle ':vcs_info:git:*' actionformats ' (%b|%a)'
 # Prompt Configuration
 setopt prompt_subst
 
-# Prompt style: username|working directory$ + Git status
-PROMPT='%F{green}%n%f|%F{cyan}%~%f${vcs_info_msg_0_} $ '
+# Prompt style (two line): username@hostname [working directory] + Git status / > {user input}
+PROMPT='%F{cyan}┌──%F{green}%n%f@%F{yellow}%m%f %F{gray}[%~]%f${vcs_info_msg_0_} 
+%F{cyan}└─%f%F{green}>%f '
 
 # CUDA Environment (optional)
 #[[ -d /opt/cuda/bin ]] && export PATH=/opt/cuda/bin:$PATH
@@ -67,8 +68,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 export ALL_PROXY=127.0.0.1:7890
 
 # Ruby-related Environment Variables
-export GEM_HOME="$HOME/.gem/ruby/3.4.0"
-export PATH="$GEM_HOME/bin:$PATH"
+# export GEM_HOME="$HOME/.gem/ruby/3.4.0"
+# export PATH="$GEM_HOME/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
