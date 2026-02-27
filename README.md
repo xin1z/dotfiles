@@ -2,9 +2,9 @@
 
 ### TL,DR
 
-This repo is used to store all my dotfiles for open source softwares e.g. Bash, Zsh, Neovim etc.
+This repo is used to store all my dotfiles (most of, at least) for open source softwares e.g. Bash, Zsh, Neovim etc.
 
-It includes the following config files for now:
+It includes the following configs for now:
 
 1. Zsh: `.zshrc`
 2. Neovim: `nvim/`
