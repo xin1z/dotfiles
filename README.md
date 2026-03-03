@@ -8,6 +8,7 @@ It includes the following configs for now:
 
 1. Zsh: `.zshrc`
 2. Neovim: `nvim/`
+3. fontconfig: `cjk-fallback.conf`
 
 More configs will be added to this repo in future.
 
@@ -137,3 +138,21 @@ ln -sf ~/dotfiles/dotfiles/nvim/ ~/.config/nvim/
 ```
 
 Then, start Neovim with `nvim` in terminal, run `:PackerSync` in command mode, and everything should work just fine.
+
+#### fontconfig
+
+This config file matches characters by langauges (mostly CJK) to make them displayed correctly.
+
+It only matches:
+
+1. `zh_CN`
+2. `zh_SG`
+3. `zh_HK`
+4. `zh_TW`
+5. `ja_JP`
+
+to their Noto Sans fonts for now (because I only need proper CJK character display besides latin alphabets).
+
+It has included `Symbols Nerd Font` for better nerd font display as well, so make sure you've installed it.
+
+Link this config file to your fontconfig folder, then refresh caches with `fc-cache -fv`, and everything should work just fine.
