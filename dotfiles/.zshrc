@@ -72,20 +72,29 @@ export ALL_PROXY=127.0.0.1:7890
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-function conda-init {
-__conda_setup="$('/opt/miniforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/xin/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/opt/miniforge/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniforge/etc/profile.d/conda.sh"
+    if [ -f "/home/xin/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/xin/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/opt/miniforge/bin:$PATH"
+        export PATH="/home/xin/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
-# Prevent using clear in miniforge when not activating any environment
-export PATH=/usr/bin:/bin:$PATH
-}
 # <<< conda initialize <<<
 
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba shell init' !!
+export MAMBA_EXE='/home/xin/miniforge3/bin/mamba';
+export MAMBA_ROOT_PREFIX='/home/xin/miniforge3';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias mamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
