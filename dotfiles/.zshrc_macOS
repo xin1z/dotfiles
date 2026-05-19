@@ -47,9 +47,8 @@ zstyle ':vcs_info:git:*' actionformats ' (%b|%a)'
 # Prompt Configuration
 setopt prompt_subst
 
-# Prompt style (two line): username@hostname [working directory] + Git status / > {user input}
-PROMPT='%F{cyan}┌──%F{green}%n%f@%F{yellow}%m%f %F{gray}[%~]%f${vcs_info_msg_0_} 
-%F{cyan}└─%f%F{green}>%f '
+# Prompt style: username@hostname [working directory] + Git status / > {user input}
+PROMPT='%F{green}%n%f@%F{yellow}%m%f %F{gray}[%~]%f${vcs_info_msg_0_} %f%F{green}->%f '
 
 # Syntax highlighting custom highlighters
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
@@ -62,3 +61,4 @@ alias clang++strict="clang++ -std=c++20 -Wall -Wshadow -Wextra -Wpedantic -Werro
 alias g++opt="g++ -std=c++20 -O3 -Wall -Wextra"
 
 export HOMEBREW_NO_ENV_HINTS=1
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

@@ -50,9 +50,8 @@ zstyle ':vcs_info:git:*' actionformats ' (%b|%a)'
 # Prompt Configuration
 setopt prompt_subst
 
-# Prompt style (two line): username@hostname [working directory] + Git status / > {user input}
-PROMPT='%F{cyan}┌──%F{green}%n%f@%F{yellow}%m%f %F{gray}[%~]%f${vcs_info_msg_0_} 
-%F{cyan}└─%f%F{green}>%f '
+# Prompt style: username@hostname [working directory] + Git status / > {user input}
+PROMPT='%F{green}%n%f@%F{yellow}%m%f %F{gray}[%~]%f${vcs_info_msg_0_} %f%F{green}->%f '
 
 # CUDA Environment (optional)
 #[[ -d /opt/cuda/bin ]] && export PATH=/opt/cuda/bin:$PATH
